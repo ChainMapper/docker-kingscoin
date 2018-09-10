@@ -11,7 +11,7 @@ RUN mkdir /data
 ENV HOME /data
 
 #rpc port & main port
-EXPOSE 6666 22500
+EXPOSE 6666 5545
 
 COPY start.sh /start.sh
 COPY gen_config.sh /gen_config.sh
