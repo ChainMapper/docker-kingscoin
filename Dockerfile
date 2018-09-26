@@ -1,11 +1,10 @@
 FROM chainmapper/walletbase-xenial
 
-ENV WALLET_URL=https://github.com/KINGSCOIN-KGS/KGS-Core/releases/download/v1/ubuntu.tar.gz
+ENV WALLET_URL=https://github.com/alamin0x1/ThunderCash/releases/download/v1.02/Bin.zip
 
-RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
-	&& cd /usr/local/bin \
-	&& tar xvzf /tmp/wallet.tar.gz --strip-components 1\
-	&& rm /tmp/wallet.tar.gz
+RUN wget $WALLET_URL -O /tmp/wallet.zip \
+	&& unzip -j /tmp/wallet.zip -d /usr/local/bin \
+	&& chmod +x /usr/local/bin/*
 
 RUN mkdir /data
 ENV HOME /data
