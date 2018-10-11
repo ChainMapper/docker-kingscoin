@@ -7,6 +7,6 @@ rpcallowip=$RPCALLOW
 rpcport=6666
 txindex=1
 listen=1
-addnode=45.76.132.62
-addnode=45.63.85.207
+addnode=45.32.36.74
+addnode=149.28.139.90
 EOF
