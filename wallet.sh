@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kingscoin-cli -datadir=/data/wallet/ getinfo "$@"
+kingscoin-cli -datadir=/data/wallet/ "$@"
