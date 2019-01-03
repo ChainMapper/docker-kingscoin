@@ -1,10 +1,10 @@
 FROM chainmapper/walletbase-xenial
 
-ENV WALLET_URL=https://github.com/kingscrypto/KINGSCOIN/releases/download/1.0.0/kingscoin-1.0.0-x86_64-linux-gnu.tar.gz
+ENV WALLET_URL=https://github.com/kingscrypto/KINGSCOIN/releases/download/v1.1.1.1/kingscoin-1.1.1.1-Ubuntu16.tar.gz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
-	&& tar xzvf /tmp/wallet.tar.gz \
+	&& tar xzvf /tmp/wallet.tar.gz  --strip-components 1\
 	&& rm /tmp/wallet.tar.gz
 
 RUN mkdir /data
