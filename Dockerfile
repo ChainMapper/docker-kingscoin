@@ -1,6 +1,6 @@
-FROM chainmapper/walletbase-xenial
+FROM chainmapper/walletbase-bionic
 
-ENV WALLET_URL=https://github.com/kingscrypto/KINGSCOIN/releases/download/v1.1.1.1/kingscoin-1.1.1.1-Ubuntu16.tar.gz
+ENV WALLET_URL=https://github.com/kingscrypto/KINGSCOIN/releases/download/v1.1.1.2/kingscoin-1.1.1.2-Ubuntu18.tar.gz
 
 RUN wget $WALLET_URL -O /tmp/wallet.tar.gz \
 	&& cd /usr/local/bin \
